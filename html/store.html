@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>store</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/css.css'>
+    <script src='../js/js.js' ></script>
+</head>
+
+<body onload="creatFormElements()">
+    <h1 id="header"></h1>
+
+<input type="button" value="addProduct" class="button"  onclick="addProductEvent()">
+<input type="button" value="removeProduct" class="button" style="vertical-align:middle" onclick="removeProductEvent()">
+<input type="button" value="see all products" class="button" style="vertical-align:middle" onclick="viewProducts()">
+<input type="button" value="edit product" class="button" style="vertical-align:middle" onclick="editProduct()">
+<br><br>
+<label>search by:</label>
+<select id="search" onchange="searchEvent()">
+    <option value="">--Please choose an option--</option>
+    <option value="name">name</option>
+    <option value="category">category</option>
+    <option value="price">price</option>
+    <option value="out of stack">out of stock</option>
+</select><br><br>
+<input type="number" id="range" placeholder="enter a range">
+<div id="parentSearch"></div>
+
+
+</body>
+
+</html>
